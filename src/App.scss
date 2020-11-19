@@ -1,0 +1,230 @@
+@font-face {
+  font-family: 'DnaHand';
+  src: local('DnaHand'), url(./fonts/dnahand.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: LABTG;
+  src: local('LABTG'), url(./fonts/LABTG___.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Arenq;
+  src: local('Arenq'), url(./fonts/Arenq.otf) format('opentype');
+}
+
+/*  ---===HEADER===--- Nav component + Logo (SYRA)  */
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.App-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 5vh;
+  width: 80%;
+}
+
+.Nav-link {
+  text-decoration: none;
+
+  li {
+    color: white;
+    font-family: LABTG, sans-serif;
+    font-size: 2.5rem;
+    text-shadow: 0 0 1rem lightgray;
+    border-radius: 2rem;
+    letter-spacing: 0.3ch;
+    margin-top: 1rem;
+    padding: 0 5rem;
+    
+    &:hover {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+      transition: 0.2s ease-in-out;
+    }
+  }
+}
+
+
+.App-logo {
+  font-family: Arenq, sans-serif;
+  font-weight: normal;
+  margin-top: 3rem;
+  font-size: 20rem;
+  line-height: 1;
+  color: #EAEAEA;
+  text-shadow: 0 0 1rem rgba(255, 255, 255, 1);
+}
+
+/*   ---===MAIN BODY===--- Variable Components*/
+
+.App-main {
+  flex-basis: 60vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  justify-content: stretch;
+  align-items: center;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.Home-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: scale-down;
+  background-position: 50% -50%;
+  opacity: 0.7;
+}
+
+.slides {
+  max-height: 400px;
+  max-width: 700px;
+  display: grid;
+}
+
+.slide {
+  grid-area: 1 / -1;
+  height: 400px;
+  width: 700px;
+  min-height: 200px;
+  min-width: 350px;
+  box-shadow: 0 0 40px rgba(200, 200, 200, 0.15);
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center center;
+
+  transition: 0.5s ease-in-out;
+  transform: 
+    translateX( calc( 100% * var(--offset)) )
+    rotateY( calc( 25deg * var(--dir)) );
+}
+
+.arrows {
+  font-family: sans-serif;
+  height: 400px;
+  width: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: black;
+  color: darkgrey;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  z-index: 100;
+  opacity: 0.5;
+}
+
+.arrows:hover {
+  opacity: 0.7;
+  background: rgba(150, 150, 150, 0.5);
+  box-shadow: 0 0 30px rgba(100, 100, 100, 0.15);
+}
+
+.Home-image {
+  height: 100%;
+  object-fit: contain;
+  opacity: 1;
+  border-radius: 4rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.LinkTree-container {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.LinkTree-list {
+  width: 40%;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.LinkTree-item {
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border: 1px solid rgba(200,200,200, 0.5);
+  box-shadow: 2px 2px 15px rgba(200,200,200, 0.5);
+  position: relative;
+  cursor: pointer;
+}
+
+.LinkTree-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+}
+
+/*   ---===Footer===--- */
+
+.App-footer {
+  flex-basis: 5vh;
+  width: 80%;
+}
+
+.Social-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+a.Social-link {
+  transition: transform 300ms;
+  width: 25px;
+  height: 25px;
+  vertical-align: flex-start;
+  font-size: 25px;
+  line-height: 25px;
+  color: black;
+}
+
+a.Social-link:hover {
+  transform: translateY(-3px);
+}
+
+.icon-shadow {
+  filter: drop-shadow(0 0 0.4rem #fff);
+}
+
+.youtube .icon-shadow {
+    filter: drop-shadow(0 0 0.4rem rgba(255,255,255, 0.6));
+}
