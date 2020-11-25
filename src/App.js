@@ -17,7 +17,6 @@ function App() {
       <div className="App">
         <header className="App-header">
           <Nav />
-          <h1 className="App-logo">SYRA</h1>
         </header>
         <div className="App-main">
           <Route path="/" exact component={Home} />

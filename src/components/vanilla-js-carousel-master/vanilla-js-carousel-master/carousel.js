@@ -82,7 +82,7 @@ class Carousel {
   // Construct the carousel navigation
   setNav() {
     galleryContainer.appendChild(document.createElement('ul')).className = 'gallery-nav';
-
+    console.log("running setNav")
     this.carouselArray.forEach(item => {
       const nav = galleryContainer.lastElementChild;
       nav.appendChild(document.createElement('li'));

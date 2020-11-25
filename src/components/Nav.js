@@ -11,6 +11,7 @@ function Nav() {
 				<Link className="Nav-link" to="/releases">
 					<li>Releases</li>
 				</Link>
+				<h1 className="App-logo">SYRA</h1>
 				<Link className="Nav-link" to="/shows">
 					<li>Shows</li>
 				</Link>

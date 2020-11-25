@@ -1,71 +1,50 @@
-import React, { useReducer } from 'react'
-import teardrop3 from '../images/Teardrop8.jpg'
-import teardrop2 from '../images/Teardrop10.jpg'
-import teardrop from '../images/Teardrop5.1.png'
-import Slide from './Slide.js'
+import React from 'react'
+import teardrop1 from '../images/Teardrop8.jpg'
+import teardrop2 from '../images/Teardrop3.jpg'
+import teardrop3 from '../images/Teardrop10.jpg'
+import teardrop4 from '../images/halloween.jpg'
+import teardrop5 from '../images/Teardrop5.1.png'
+import Carousel from './Carousel.js'
 
 
 const slides = [{
-	image: teardrop,
-	background: true,
+	src: teardrop1,
 	title: 'Tears of Dispair',
 	subtitle: 'Choking the Feelings',
-	description: 'Keeping it all inside'
+	alt: 'Keeping it all inside',
+	id: 1001
 }, {
-	image: teardrop2,
-	background: false,
+	src: teardrop2,
 	title: 'Phantom of the Tears',
 	subtitle: 'Mask the Pain',
-	description: 'Masks upon masks'
+	alt: 'Masks upon masks',
+	id: 1002
+},{
+	src: teardrop3,
+	title: 'Phantom of the Tears',
+	subtitle: 'Mask the Pain',
+	alt: 'Masks upon masks',
+	id: 1003
+},{
+	src: teardrop4,
+	title: 'Phantom of the Tears',
+	subtitle: 'Mask the Pain',
+	alt: 'Masks upon masks',
+	id: 1004
 }, {
-	image: teardrop3,
-	background: false,
+	src: teardrop5,
 	title: 'Tear Me Apart',
 	subtitle: '',
-	description: 'Masks upon masks'
+	alt: 'Cry baby, cry',
+	id: 1005
 }]
 
 
-const initialState = {
-    slideIndex: 0
-  }
-
-const slidesReducer = (state, event) => {
-	if(event.type === 'NEXT') {
-	  return {
-	    ...state,
-	    slideIndex: (state.slideIndex + 1) % slides.length
-	  }
-	}
-	if(event.type === 'PREV') {
-	 return {
-	    ...state,
-	    slideIndex: state.slideIndex === 0
-	      ? slides.length - 1
-	      : state.slideIndex - 1
-	  }
-	}
-}
-
 function Home() {
-	const [state, dispatch] = useReducer(slidesReducer, initialState)
-
 	return (
 		<>
-			<div className="Home-image-container">
-				<div className="slides">
-					{slides.map( (slide, i) => {
-						let slideCenter = Math.round(slides.length / 2 )
-						let offset = Math.abs( state.slideIndex - i ) < slideCenter ? (state.slideIndex - i) : slides.length + (state.slideIndex - i);
-						return <Slide slide={slide} offset={offset} key={i} />
-					})}
-				</div>
-			</div>
-			<div className="Home-image-container">
-				<div className="arrows left" onClick={() => { dispatch({type: 'PREV'}) }} > &lt;</div>
-				<div className="arrows right" onClick={() => { dispatch({type: 'NEXT'}) }} >&gt;</div>
-			</div>
-			</>
+			<Carousel slides={slides} />
+		</>
 	)
 }
 
