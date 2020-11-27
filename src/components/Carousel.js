@@ -155,14 +155,15 @@ function Carousel({ slides }) {
 		  </div>
 		  <div className="gallery-controls">
 		  	<button 
-			  	className="gallery-controls-previous" 
+			  	className="gallery-controls-previous btn btn-lg btn-dark" 
 			  	onClick={() => dispatch({ type: 'PREV' })} >
-			  	Previous 
+			  	&lt;
 			</button>
 		  	<button 
-		  		className="gallery-controls-next" 
+		  		className="gallery-controls-next btn btn-lg btn-dark" 
 			  	onClick={() => dispatch({ type: 'NEXT' })} >
-		  		Next </button>
+		  		&gt;
+		  	</button>
 		  </div>
 		</div>
 	)

@@ -19,6 +19,7 @@
   width: auto;
   z-index: 0;
   object-fit: contain;
+  background-color: black;
 }
 
 .gallery-item.gallery-item-selected {
@@ -60,6 +61,10 @@
   transform: translateX(-50%);
 }
 
+.gallery-item.hidden {
+  visibility: hidden; 
+}
+
 .gallery-controls {
   display: flex;
   justify-content: center;
@@ -67,12 +72,10 @@
 }
 
 .gallery-controls button {
-  border: 0;
   cursor: pointer;
-  font-size: 16px;
-  margin: 0 20px;
-  padding: 0 12px;
   text-transform: capitalize;
+  min-width: 200px;
+  font-weight: 900;
 }
 
 .gallery-controls button:focus {
