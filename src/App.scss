@@ -199,7 +199,61 @@ h3 {
   background-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
 }
 
-/*   ---===Footer===--- */
+/*    ---===Releases Page===---                          */
+
+.Releases-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.Releases-header, .Releases-body, .Releases-footer {
+  margin-top: 2%;
+}
+
+.Releases-header {
+  width: 100%;
+  & h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 0.5rem rgba(255, 255, 255, 1), 0 0 1.2rem rgba(255, 255, 255, 0.5) ;
+  }
+}
+
+.Releases-body {
+  position: relative;
+  width: 48vw;
+  padding-bottom: 27vw;
+}
+
+.Releases-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.Releases-footer {
+  width: 100%;
+}
+
+.cta {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.cta-youtube {
+  padding: 0.6rem 1.8rem 1.2rem;
+}
+
+.cta-youtube-icon {
+  transform: translateY(0.45rem) translateX(-0.6rem);
+}
+
+/*    ---===Footer===---                                 */
 
 .App-footer {
   flex-basis: 5vh;
