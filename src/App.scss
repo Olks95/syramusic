@@ -15,6 +15,11 @@
 
 // Bootstrap styles 
 
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
 .btn {
   display: inline-block;
   font-weight: 400;
@@ -33,7 +38,7 @@
 }
 
 .btn-lg {
-  padding: .6rem 1rem;
+  padding: 1rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.25rem;
@@ -45,6 +50,7 @@
   background-color: transparent;
   text-shadow: 0 0 1rem rgba(255, 255, 255, 1), 0 0 2rem rgba(234, 234, 234, 0.3);
   background-image: none;
+  font-family: Arenq, sans-serif;
     &:hover {
     color: #fff;
     background-color: #090909;
@@ -64,6 +70,20 @@
   }
 }
 
+// Default headings
+
+h1 {
+  font-family: Arenq, sans-serif;
+  font-variant: small-caps;
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-family: "Arial Narrow", sans-serif;
+  font-variant: small-caps;
+  font-size: 1rem;
+}
+
 /*  ---===HEADER===--- Nav component + Logo (SYRA)  */
 
 .App {
@@ -79,19 +99,20 @@
 }
 
 .App-header {
-  width: 100%;
+  width: 80%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
 .Nav-bar {
+  position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  width: 35%;
   align-items: center;
   height: 8rem;
-  width: 80%;
 }
 
 .Nav-link {
@@ -100,19 +121,24 @@
   li {
     color: white;
     font-family: LABTG, sans-serif;
+    font-variant: small-caps;
     font-size: 2.5rem;
-    text-shadow: 0 0 1rem lightgray;
+    text-shadow: 0 0 1rem #D3D3D3;
     letter-spacing: 0.3ch;
-    padding: 0 5rem;
+    padding: 0 3rem;
     
     &:hover {
-      color: lightgrey;
+      color: #D3D3D3;
     }
   }
 }
 
 
 .App-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
   font-family: Arenq, sans-serif;
   font-weight: normal;
   font-size: 8rem;
@@ -124,7 +150,6 @@
 /*   ---===MAIN BODY===--- Variable Components*/
 
 .App-main {
-  height: 80vh;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -207,4 +232,52 @@ a.Social-link:hover {
 
 .youtube .icon-shadow {
     filter: drop-shadow(0 0 0.4rem rgba(255,255,255, 0.6));
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  } 
+
+  .App-main, .App-header, .App-footer {
+    width: 95%;
+  }
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 8px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .App-header {
+    margin-top: 16rem;
+    justify-content: center;
+  }
+
+  .Nav-bar {
+    justify-content: center;
+    width: 50%;
+    height: 8rem;
+  }
+
+  .Nav-link li {
+    font-size: 2.5rem;
+    padding: 0 2.5rem;
+  }
+
+  .App-logo {
+    font-size: 14rem;
+  }
+
+  .App-main, .App-header, .App-footer {
+    width: 100%;
+  }
 }

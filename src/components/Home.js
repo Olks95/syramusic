@@ -12,30 +12,35 @@ const slides = [{
 	title: 'Tears of Dispair',
 	subtitle: 'Choking the Feelings',
 	alt: 'Keeping it all inside',
+	href: "https://www.instagram.com/syra.music/",
 	id: 1001
 }, {
 	src: teardrop2,
 	title: 'Phantom of the Tears',
 	subtitle: 'Mask the Pain',
 	alt: 'Masks upon masks',
+	href: "https://www.instagram.com/syra.music/",
 	id: 1002
 },{
 	src: teardrop3,
-	title: 'Phantom of the Tears',
-	subtitle: 'Mask the Pain',
-	alt: 'Masks upon masks',
+	title: 'Follow @syra.music',
+	subtitle: 'on Instagram',
+	alt: "Link to Syra's Instagram",
+	href: "https://www.instagram.com/syra.music/",
 	id: 1003
 },{
 	src: teardrop4,
 	title: 'Phantom of the Tears',
 	subtitle: 'Mask the Pain',
 	alt: 'Masks upon masks',
+	href: "https://www.instagram.com/syra.music/",
 	id: 1004
 }, {
 	src: teardrop5,
 	title: 'Tear Me Apart',
 	subtitle: '',
 	alt: 'Cry baby, cry',
+	href: "https://www.instagram.com/syra.music/",
 	id: 1005
 }]
 
