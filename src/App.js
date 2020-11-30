@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Nav from './components/Nav.js'
-import Home from './components/Home.js'
-import Releases from './components/Releases.js'
-import Shows from './components/Shows.js'
-import Contact from './components/Contact.js'
+import Nav from './components/Nav.js';
+import Home from './components/Home.js';
+import Releases from './components/Releases.js';
+import Shows from './components/Shows.js';
+import Contact from './components/Contact.js';
 import SocialFollow from './components/SocialFollow.js';
-import LinkTree from './components/LinkTree.js'
+import LinkTree from './components/LinkTree.js';
 
 import './App.scss';
 

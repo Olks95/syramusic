@@ -13,7 +13,8 @@ function Releases() {
 					<h1>Green Leaves - Official Music Video</h1>
 				</div>
 				<div className="Releases-body">
-					<iframe className="Releases-video" src={youtubeLink} allowFullScreen>
+					<iframe className="Releases-video" src={youtubeLink} frameBorder="0" allowFullScreen >
+						Browser Not Compatible.
 					</iframe>
 				</div>
 				<div className="Releases-footer">
