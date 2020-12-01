@@ -104,6 +104,7 @@ h3 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
 .Nav-bar {
@@ -164,6 +165,86 @@ h3 {
   }
 }
 
+.Home-background {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  & img {
+    opacity: 0.7;
+    height: 24vw;
+    width: 18vw;
+    position: relative;
+    object-fit: contain;
+    top: 18%;
+    left: -8%;
+  }
+  // background-size: contain;
+  // background-position: center center;
+  // background-repeat: no-repeat;
+}
+
+/*    ---===Releases Page===---                          */
+
+.Releases-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.Releases-header, .Releases-body, .Releases-footer {
+  margin-top: 2%;
+}
+
+.Releases-header {
+  width: 100%;
+  & h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 0.5rem rgba(255, 255, 255, 1), 0 0 1.2rem rgba(255, 255, 255, 0.5) ;
+  }
+}
+
+.Releases-body {
+  position: relative;
+  width: 48vw;
+  padding-bottom: 27vw;
+  min-width: 480px;
+}
+
+#Releases-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.Releases-footer {
+  width: 100%;
+}
+
+.cta {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.cta-youtube {
+  padding: 0.6rem 1.8rem 1.2rem;
+}
+
+.cta-youtube-icon {
+  transform: translateY(0.45rem) translateX(-0.6rem);
+}
+
+// LinkTree
+
 .LinkTree-container {
   width: 100%;
   padding: 2rem 0;
@@ -197,60 +278,6 @@ h3 {
   left: 0;
   z-index: 1;
   background-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
-}
-
-/*    ---===Releases Page===---                          */
-
-.Releases-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
-.Releases-header, .Releases-body, .Releases-footer {
-  margin-top: 2%;
-}
-
-.Releases-header {
-  width: 100%;
-  & h1 {
-    font-size: 3rem;
-    text-shadow: 0 0 0.5rem rgba(255, 255, 255, 1), 0 0 1.2rem rgba(255, 255, 255, 0.5) ;
-  }
-}
-
-.Releases-body {
-  position: relative;
-  width: 48vw;
-  padding-bottom: 27vw;
-}
-
-.Releases-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.Releases-footer {
-  width: 100%;
-}
-
-.cta {
-  text-transform: uppercase;
-  font-size: 1.8rem;
-}
-
-.cta-youtube {
-  padding: 0.6rem 1.8rem 1.2rem;
-}
-
-.cta-youtube-icon {
-  transform: translateY(0.45rem) translateX(-0.6rem);
 }
 
 /*    ---===Footer===---                                 */
@@ -296,6 +323,11 @@ a.Social-link:hover {
   .App-main, .App-header, .App-footer {
     width: 95%;
   }
+
+  .Releases-body {
+    width: 72vw;
+    padding-bottom: 54vw;
+  }
 }
 
 @media (max-width: 700px) {
@@ -333,5 +365,10 @@ a.Social-link:hover {
 
   .App-main, .App-header, .App-footer {
     width: 100%;
+  }
+
+  .Releases-body {
+    width: 88vw;
+    padding-bottom: 66vw;
   }
 }

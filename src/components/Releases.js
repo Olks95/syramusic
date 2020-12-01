@@ -3,17 +3,17 @@ import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 
-const youtubeLink = "https://www.youtube.com/embed/tgbNymZ7vqY"
+const youtubeLink = "https://www.youtube.com/embed/tgbNymZ7vqY?&rel=0"
 
 function Releases() {
 	return (
 		<>
 			<div className="Releases-container">
 				<div className="Releases-header">
-					<h1>Green Leaves - Official Music Video</h1>
+					<h1>Green Leaves - Official Lyric Video</h1>
 				</div>
 				<div className="Releases-body">
-					<iframe className="Releases-video" src={youtubeLink} frameBorder="0" allowFullScreen >
+					<iframe id="Releases-video" type="text/html" src={youtubeLink} frameBorder="0" allowFullScreen allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  title="Newest Syra Video">
 						Browser Not Compatible.
 					</iframe>
 				</div>

@@ -19,11 +19,13 @@ function App() {
           <Nav />
         </header>
         <div className="App-main">
-          <Route path="/" exact component={Home} />
-          <Route path="/releases" component={Releases} />
-          <Route path="/shows" component={Shows} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/linktree" component={LinkTree} />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/releases" component={Releases} />
+            <Route path="/shows" component={Shows} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/linktree" component={LinkTree} />
+          </Switch>
         </div>
         <footer className="App-footer">
           <SocialFollow/>
