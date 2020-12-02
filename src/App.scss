@@ -6,8 +6,9 @@
 
 @font-face {
   font-family: "Arenq";
-  src: local("Arenq"), 
-    url(./fonts/Arenq.otf) format("opentype");
+  src: local("Arenq"),
+    url(./fonts/Arenq.woff) format("woff"),
+    url(./fonts/Arenq.ttf) format("truetype");
 }
 
 // Bootstrap styles 

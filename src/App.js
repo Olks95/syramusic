@@ -10,7 +10,8 @@ import SocialFollow from './components/SocialFollow.js';
 import LinkTree from './components/LinkTree.js';
 
 // Font imports
-import './fonts/Arenq.otf';
+import './fonts/Arenq.ttf';
+import './fonts/Arenq.woff';
 import './fonts/LABTG.ttf';
 
 // Stylesheet
