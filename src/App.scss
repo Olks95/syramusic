@@ -1,16 +1,19 @@
 @font-face {
-  font-family: 'DnaHand';
-  src: local('DnaHand'), url(./fonts/dnahand.ttf) format('truetype');
+  font-family: "DnaHand";
+  src: local("DnaHand"),
+    url(./fonts/dnahand.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: LABTG;
-  src: local('LABTG'), url(./fonts/LABTG___.ttf) format('truetype');
+  font-family: "LABTG";
+  src: local("LABTG"), 
+    url(./fonts/LABTG.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: Arenq;
-  src: local('Arenq'), url(./fonts/Arenq.otf) format('opentype');
+  font-family: "Arenq";
+  src: local("Arenq"), 
+    url(./fonts/Arenq.otf) format("opentype");
 }
 
 // Bootstrap styles 
@@ -50,7 +53,7 @@ a {
   background-color: transparent;
   text-shadow: 0 0 1rem rgba(255, 255, 255, 1), 0 0 2rem rgba(234, 234, 234, 0.3);
   background-image: none;
-  font-family: Arenq, sans-serif;
+  font-family: "Arenq", sans-serif;
     &:hover {
     color: #fff;
     background-color: #090909;
@@ -73,7 +76,7 @@ a {
 // Default headings
 
 h1 {
-  font-family: Arenq, sans-serif;
+  font-family: "Arenq", sans-serif;
   font-variant: small-caps;
   font-size: 1.6rem;
 }
@@ -121,7 +124,7 @@ h3 {
 
   li {
     color: white;
-    font-family: LABTG, sans-serif;
+    font-family: "LABTG", sans-serif;
     font-variant: small-caps;
     font-size: 2.5rem;
     text-shadow: 0 0 1rem #D3D3D3;
@@ -140,7 +143,7 @@ h3 {
   left: 50%;
   transform: translateX(-50%);
   top: 0;
-  font-family: Arenq, sans-serif;
+  font-family: "Arenq", sans-serif;
   font-weight: normal;
   font-size: 8rem;
   line-height: 1;

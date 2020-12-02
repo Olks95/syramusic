@@ -1,35 +1,19 @@
 {
-  "short_name": "Syra Music",
-  "name": "Syra Music Webpage",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 24x24",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "favicon-16x16.png",
-      "sizes": "16x16",
-      "type": "image/png"
-    },
-    {
-      "src": "favicon-32x32.png",
-      "sizes": "32x32",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "android-chrome-192x192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "android-chrome-192x192.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+    "name": "Syra Music",
+    "short_name": "Syra Music",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "display": "standalone"
 }

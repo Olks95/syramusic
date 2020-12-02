@@ -9,6 +9,12 @@ import Contact from './components/Contact.js';
 import SocialFollow from './components/SocialFollow.js';
 import LinkTree from './components/LinkTree.js';
 
+// Font imports
+import './fonts/Arenq.otf';
+import './fonts/dnahand.ttf';
+import './fonts/LABTG.ttf';
+
+// Stylesheet
 import './App.scss';
 
 function App() {
