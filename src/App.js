@@ -11,7 +11,6 @@ import LinkTree from './components/LinkTree.js';
 
 // Font imports
 import './fonts/Arenq.otf';
-import './fonts/dnahand.ttf';
 import './fonts/LABTG.ttf';
 
 // Stylesheet
