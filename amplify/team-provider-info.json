@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifydc7be5c9bcf44-staging-112419-authRole",
+      "UnauthRoleArn": "arn:aws:iam::557713322585:role/amplify-amplifydc7be5c9bcf44-staging-112419-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::557713322585:role/amplify-amplifydc7be5c9bcf44-staging-112419-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-amplifydc7be5c9bcf44-staging-112419-deployment",
+      "UnauthRoleName": "amplify-amplifydc7be5c9bcf44-staging-112419-unauthRole",
+      "StackName": "amplify-amplifydc7be5c9bcf44-staging-112419",
+      "StackId": "arn:aws:cloudformation:eu-west-2:557713322585:stack/amplify-amplifydc7be5c9bcf44-staging-112419/ebddd1d0-3490-11eb-86f0-0a58f43a6ffc",
+      "AmplifyAppId": "d11m0nq7bodtlj"
+    },
+    "categories": {
+      "auth": {
+        "syramusicb3aad32a": {}
+      }
+    }
+  }
+}
