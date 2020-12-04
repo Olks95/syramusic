@@ -91,17 +91,25 @@ const reducer = (state, action) => {
 			activeSlides.push(slide)
 		}
 	})
-	let [firstSlide, prevSlide, selectedSlide, nextSlide, lastSlide] = [...activeSlides]
+	let [firstSlide, prevSlide, selectedSlide, nextSlide, lastSlide] = [];
 
 	// if(action.type === 'FIND') {
 
 	// }
 	switch (action.type) {
 		case 'FIND':
-			const selectThisSlide = activeSlides.findIndex((slide) => slide.id === action.payload)
-			console.log(selectThisSlide);
-			
-			return state
+			let selectThisSlide = activeSlides.findIndex((slide) => slide.id === action.payload)
+			//As long as the selected slide is at an index of more than 2 it needs to move left
+			for(selectThisSlide; selectThisSlide > 2; selectThisSlide--) {
+				firstSlide = activeSlides.shift()
+				activeSlides = [...activeSlides, firstSlide]
+			}
+			//As long as the selected slide is at an index of less than 2 it needs to move right
+			for(selectThisSlide;selectThisSlide < 2; selectThisSlide++) {
+				lastSlide = activeSlides.pop()
+				activeSlides = [lastSlide, ...activeSlides]
+			}
+			return slideSetup(state.activeItems, ...activeSlides)
 		case 'FIRST':
 			lastSlide = activeSlides.pop()
 			nextSlide = activeSlides.pop()
