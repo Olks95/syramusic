@@ -91,13 +91,31 @@ const reducer = (state, action) => {
 			activeSlides.push(slide)
 		}
 	})
+	let [firstSlide, prevSlide, selectedSlide, nextSlide, lastSlide] = [...activeSlides]
+
+	// if(action.type === 'FIND') {
+
+	// }
 	switch (action.type) {
-		case 'NEXT':
-			const firstSlide = activeSlides.shift()
-			return slideSetup(state.activeItems, ...activeSlides, firstSlide)
+		case 'FIND':
+			const selectThisSlide = activeSlides.findIndex((slide) => slide.id === action.payload)
+			console.log(selectThisSlide);
+			
+			return state
+		case 'FIRST':
+			lastSlide = activeSlides.pop()
+			nextSlide = activeSlides.pop()
+			return slideSetup(state.activeItems, nextSlide, lastSlide, ...activeSlides)
 		case 'PREV': 
-			const lastSlide = activeSlides.pop()
+			lastSlide = activeSlides.pop()
 			return slideSetup(state.activeItems, lastSlide, ...activeSlides)
+		case 'NEXT':
+			firstSlide = activeSlides.shift()
+			return slideSetup(state.activeItems, ...activeSlides, firstSlide)
+		case 'LAST':
+			firstSlide = activeSlides.shift()
+			prevSlide = activeSlides.shift()
+			return slideSetup(state.activeItems, ...activeSlides, firstSlide, prevSlide)
 		default: throw new Error();
 	}
 }
@@ -141,7 +159,8 @@ function Carousel({ slides }) {
 					slides.map((slide, i) => (
 						<li 
 							className={galleryNavClassName + state.slides.find(el => el.id === slide.id).className}
-							key={"nav-" + slide.id} >
+							key={"nav-" + slide.id} 
+							onClick={() => dispatch({ type: 'FIND', payload: slide.id })} >
 						</li>
 					))
 				}

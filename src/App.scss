@@ -151,12 +151,11 @@ h3 {
 .App-main {
   width: 80%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   overflow: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  justify-content: center;
-  align-items: center;
 
   &::-webkit-scrollbar {
     display: none;
@@ -164,7 +163,7 @@ h3 {
 }
 
 .Home-background {
-  position: absolute;
+  position: absolute !important;
   display: flex;
   justify-content: flex-end;
   width: 100%;
@@ -239,6 +238,64 @@ h3 {
 
 .cta-youtube-icon {
   transform: translateY(0.45rem) translateX(-0.6rem);
+}
+
+// Shows Page
+
+.Shows-container {
+  margin: 5rem;
+  height: 35rem;
+  width: 55vw;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 1rem;
+  box-shadow: inset 0 0 3rem rgba(0, 0, 0, 1), 0 0 2rem rgba(255,255,255,0.35);
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  hr {
+    width: 100%;
+    overflow: visible;
+    padding: 0;
+    border: none;
+    border-top: medium double #fff;
+    border-radius: 0.8rem;
+    color: #fff;
+    text-align: center;
+    align-self: center;
+    margin: 2rem;
+    &::after {
+      font-family: "Arenq", sans-serif;
+      line-height: 0.3;
+      font-size: 1.5rem;
+      font-weight: bold;
+      content: "S";
+      display: inline-block;
+      position: relative;
+      top: -0.4rem;
+      padding: 0 0.75rem;
+      background: #191919;
+    }
+  }
+
+  .Shows-list {
+    margin: 0 2rem;
+    line-height: 2.5;
+    h3 {
+      // text-align: left;
+      font-family: serif;
+      font-size: 1.2rem;
+      text-transform: none;
+      font-variant: normal;
+    }
+  }
 }
 
 // LinkTree

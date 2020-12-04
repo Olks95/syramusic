@@ -26,8 +26,8 @@ function Slide({ slide, offset}) {
   }
   return (
     <a 
-      className={"gallery-item " + galleryStyle}
-      href={offset === 0 ? slide.href : '#null'}
+      className={galleryStyle}
+      href={slide.href}
       style={{
         '--offset': offset,
         backgroundImage: `url(${slide.src})`

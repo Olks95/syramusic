@@ -15,44 +15,43 @@
   position: relative;
   align-items: center;
   justify-content: center;
-}
 
-.gallery-item {
-  // object-fit: contain;
-  pointer-events: none;
-  cursor: default;
-  display: block;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 19rem;
-  width: 14.25rem;
-  opacity: 0.4;
-  position: absolute;
-  transition: all 0.6s ease-in-out;
-  z-index: 1;
-  text-align: center;
+  a {
+    pointer-events: none;
+    cursor: default;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 19rem;
+    width: 14.25rem;
+    opacity: 0.4;
+    position: absolute;
+    transition: all 0.6s ease-in-out;
+    z-index: 1;
+    text-align: center;
 
-  transform: 
-    translateX(calc(85% * var(--offset)));
+    transform: 
+      translateX(calc(85% * var(--offset)));
 
-  &.gallery-item-selected {
-    background-color: black;
-    cursor: pointer;
-    pointer-events: auto;
-    box-shadow: 0 0 1.8rem rgba(255, 255, 255, 0.25), 0 0 2.7rem rgba(255, 255, 255, 0.20), 0 0 4rem rgba(255, 255, 255, 0.15);
-    border-radius: 5px;
-    opacity: 1;
-    height: 31rem;
-    width: 23.25rem;
-    z-index: 3;
-  }
+    &.gallery-item-selected {
+      background-color: black;
+      cursor: pointer;
+      pointer-events: auto;
+      box-shadow: 0 0 1.8rem rgba(255, 255, 255, 0.25), 0 0 2.7rem rgba(255, 255, 255, 0.20), 0 0 4rem rgba(255, 255, 255, 0.15);
+      border-radius: 5px;
+      opacity: 1;
+      height: 31rem;
+      width: 23.25rem;
+      z-index: 4;
+    }
 
-  &.gallery-item-previous, &.gallery-item-next {
-    height: 25rem;
-    opacity: 0.9;
-    width: 18.75rem;
-    z-index: 2;
+    &.gallery-item-previous, &.gallery-item-next {
+      height: 25rem;
+      opacity: 0.9;
+      width: 18.75rem;
+      z-index: 2;
+    }
   }
 }
 
@@ -63,7 +62,7 @@
   transition: opacity 0.3s ease-in-out;
   &.selected-text {
     opacity: 1;
-    z-index: 3;
+    z-index: 5;
     text-shadow: 0 0 0.4rem rgba(255, 255, 255, 1), 0 0 1rem rgba(255, 255, 255, 0.9), 0 0 1.5rem rgba(0, 0, 0, 1);
   }
 }
@@ -147,6 +146,7 @@
   height: 10px;
   margin: 0 16px;
   width: 10px;
+  cursor: pointer;
 }
 
 .gallery-nav li.gallery-item-selected {

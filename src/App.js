@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { AnimatedSwitch } from 'react-router-transition';
 
 import Nav from './components/Nav.js';
 import Home from './components/Home.js';
@@ -17,25 +18,35 @@ import './fonts/LABTG.ttf';
 // Stylesheet
 import './App.scss';
 
+
 function App() {
   return (
-    <Router>   
+    <Router>
       <div className="App">
+        
         <header className="App-header">
           <Nav />
         </header>
+        
         <div className="App-main">
-          <Switch>
+          <AnimatedSwitch
+            atEnter={{ opacity: 0 }}
+            atLeave={{ opacity: 0}}
+            atActive={{ opacity: 1}}
+            className="switch-wrapper"
+           >
             <Route path="/" exact component={Home} />
             <Route path="/releases" component={Releases} />
             <Route path="/shows" component={Shows} />
             <Route path="/contact" component={Contact} />
             <Route path="/linktree" component={LinkTree} />
-          </Switch>
+          </AnimatedSwitch>
         </div>
+        
         <footer className="App-footer">
           <SocialFollow/>
         </footer>
+
       </div>
     </Router>
   );
