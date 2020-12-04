@@ -7,7 +7,6 @@ const youtubeLink = "https://www.youtube.com/embed/tgbNymZ7vqY?&rel=0"
 
 function Releases() {
 	return (
-		<>
 			<div className="Releases-container">
 				<div className="Releases-header">
 					<h1>Green Leaves - Official Lyric Video</h1>
@@ -26,7 +25,6 @@ function Releases() {
 					</a>
 				</div>
 			</div>
-		</>
 	)
 }
 

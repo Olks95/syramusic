@@ -148,19 +148,33 @@ h3 {
 
 /*   ---===MAIN BODY===--- Variable Components*/
 
-.App-main {
-  width: 80%;
+// Transition classes 
+
+.switch-wrapper {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: auto;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  height: 80vh;
+  width: 100%;
+  div:not([class]) {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    transition: opacity 0.2s linear;
+    -ms-overflow-style: none;
 
-  &::-webkit-scrollbar {
-    display: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
+
+//Home component
 
 .Home-background {
   position: absolute !important;

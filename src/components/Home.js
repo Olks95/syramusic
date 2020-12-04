@@ -48,14 +48,14 @@ const slides = [{
 
 function Home() {
 	return (
-		<>
+		<div>
 			<div className="Home-background hidden" aria-hidden 
 			//style={{ backgroundImage: `url(${backgroundImage})`}}
 			>
 				<img src={backgroundImage} alt="" />
 			</div>
 			<Carousel slides={slides} />
-		</>
+		</div>
 	)
 }
 

@@ -28,12 +28,11 @@ function App() {
           <Nav />
         </header>
         
-        <div className="App-main">
           <AnimatedSwitch
             atEnter={{ opacity: 0 }}
-            atLeave={{ opacity: 0}}
-            atActive={{ opacity: 1}}
-            className="switch-wrapper"
+            atLeave={{ opacity: 0 }}
+            atActive={{ opacity: 1 }}
+            className="switch-wrapper App-main"
            >
             <Route path="/" exact component={Home} />
             <Route path="/releases" component={Releases} />
@@ -41,7 +40,6 @@ function App() {
             <Route path="/contact" component={Contact} />
             <Route path="/linktree" component={LinkTree} />
           </AnimatedSwitch>
-        </div>
         
         <footer className="App-footer">
           <SocialFollow/>
