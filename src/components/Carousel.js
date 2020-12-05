@@ -91,7 +91,7 @@ const reducer = (state, action) => {
 			activeSlides.push(slide)
 		}
 	})
-	let [firstSlide, prevSlide, selectedSlide, nextSlide, lastSlide] = [];
+	let firstSlide, prevSlide, nextSlide, lastSlide;
 
 	// if(action.type === 'FIND') {
 
