@@ -217,7 +217,7 @@ h3 {
   width: 100%;
   h1 {
     font-size: 3rem;
-    text-shadow: 0 0 0.5rem rgba(255, 255, 255, 1), 0 0 1.2rem rgba(255, 255, 255, 0.5) ;
+    text-shadow: 0 0 0.5rem rgba(255, 255, 255, 1), 0 0 1.2rem rgba(255, 255, 255, 0.5);
   }
 }
 
@@ -233,6 +233,18 @@ h3 {
   left: 0;
   height: 100%;
   width: 100%;
+}
+
+.Releases-coming-soon {
+  position: absolute !important;
+  background-color: #191919 !important;
+  top: 0;
+  left: 0;
+  height: 100% !important;
+  width: 100% !important;
+  z-index: 1;
+  margin: 0 !important;
+  justify-content: center !important;
 }
 
 .Releases-footer {
@@ -265,11 +277,16 @@ h3 {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 1rem;
+  border-radius: 5px;
   box-shadow: inset 0 0 3rem rgba(0, 0, 0, 1), 0 0 2rem rgba(255,255,255,0.35);
 
   h1 {
     font-size: 3rem;
+    text-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.7), 0 0 1.2rem rgba(255, 255, 255, 0.2);
+  }
+
+  h2 {
+    text-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.7), 0 0 1.2rem rgba(255, 255, 255, 0.2);
   }
 
   hr {
@@ -294,12 +311,14 @@ h3 {
       top: -0.8rem;
       padding: 0 0.75rem;
       background: #191919;
+      text-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.7), 0 0 1rem rgba(255, 255, 255, 0.4);
     }
   }
 
   .Shows-list {
     margin: 0 2rem;
     line-height: 2.5;
+    text-shadow: 0 0 0.3rem rgba(255, 255, 255, 0.7), 0 0 0.8rem rgba(255, 255, 255, 0.2);
     h3 {
       font-family: serif;
       text-transform: none;
