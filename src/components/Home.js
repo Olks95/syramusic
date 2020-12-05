@@ -4,7 +4,6 @@ import teardrop2 from '../images/Teardrop3.png'
 import teardrop3 from '../images/Teardrop10.png'
 import teardrop4 from '../images/halloween.png'
 import teardrop5 from '../images/Teardrop5.1.png'
-import backgroundImage from '../images/home-background.png'
 import Carousel from './Carousel.js'
 
 
@@ -49,11 +48,6 @@ const slides = [{
 function Home() {
 	return (
 		<div>
-			<div className="Home-background hidden" aria-hidden 
-			//style={{ backgroundImage: `url(${backgroundImage})`}}
-			>
-				<img src={backgroundImage} alt="" />
-			</div>
 			<Carousel slides={slides} />
 		</div>
 	)
