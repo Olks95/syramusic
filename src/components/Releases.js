@@ -3,7 +3,8 @@ import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 
-const youtubeLink = "https://www.youtube.com/embed/tgbNymZ7vqY?&rel=0"
+const youtubeLink = null;
+// const youtubeLink = "https://www.youtube.com/embed/tgbNymZ7vqY?&rel=0"
 
 function Releases() {
 	return (
