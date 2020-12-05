@@ -98,6 +98,7 @@ const reducer = (state, action) => {
 	// }
 	switch (action.type) {
 		case 'FIND':
+			//Locate desired slide in the carousel (state)
 			let selectThisSlide = activeSlides.findIndex((slide) => slide.id === action.payload)
 			//As long as the selected slide is at an index of more than 2 it needs to move left
 			for(selectThisSlide; selectThisSlide > 2; selectThisSlide--) {
