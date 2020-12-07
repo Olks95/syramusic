@@ -23,11 +23,11 @@ const links = [{
 function LinkTree() {
     return ( <
         >
-        <div className="LinkTree-container">
+        <div className="LinkTree-container ">
 				<ul className="LinkTree-list" >
 					{links.map((link) => {
 						return (
-							<li className="LinkTree-item" key={ link.key } >
+							<li className="LinkTree-item container-shadow" key={ link.key } >
 								<h3>{ link.name }</h3>
 								{/*<p>{ link.desc }</p>*/}
 								<a href={ link.src }>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contact() {
 	return (
-		<div className="Shows-container">
+		<div className="Shows-container container-shadow">
 			<h1>Contact</h1>
 			<hr/>
 			<div className="Shows-list">

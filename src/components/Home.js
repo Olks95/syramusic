@@ -47,9 +47,9 @@ const slides = [{
 
 function Home() {
 	return (
-		<div>
+		<>
 			<Carousel slides={slides} />
-		</div>
+		</>
 	)
 }
 
