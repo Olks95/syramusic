@@ -27,7 +27,7 @@ const slides = [{
 	title: 'Subscribe to SYRA',
 	subtitle: 'on YouTube',
 	alt: "YouTube Profile Image",
-	href: "https://www.youtube.com/",
+	href: "https://www.youtube.com/channel/UCjXACzv_0uZw8Jqtya4CKqA",
 	id: 1003
 },{
 	src: slideFourImg,
@@ -41,7 +41,7 @@ const slides = [{
 	title: 'Subscribe to SYRA',
 	subtitle: 'on YouTube',
 	alt: 'Lyric Video Cover',
-	href: "https://www.youtube.com/",
+	href: "https://www.youtube.com/channel/UCjXACzv_0uZw8Jqtya4CKqA",
 	id: 1005
 }]
 

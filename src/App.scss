@@ -371,7 +371,7 @@ h3 {
 
 .App-footer {
   flex-basis: 5vh;
-  width: 80%;
+  width: 60%;
 }
 
 .Social-container {
@@ -436,8 +436,11 @@ a.Social-link:hover {
     }  
   }
 
-  .App-header, .App-footer {
+  .App-header { 
     width: 90%;
+  }
+  .App-footer {
+    width: 80%;
   }
 
   .Shows-container {

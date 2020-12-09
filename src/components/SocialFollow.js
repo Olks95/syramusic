@@ -14,22 +14,22 @@ import {
 function SocialFollow() {
 	return (
 		<div className="Social-container">
-			<a href="https://www.youtube.com"
+			<a href="https://www.youtube.com/channel/UCjXACzv_0uZw8Jqtya4CKqA"
 				className="youtube Social-link" >
 				<FontAwesomeIcon icon={faYoutube} className="icon-shadow" size="1x"/>
 			</a>
-			<a href="https://facebook.com"
+{/*			<a href="https://facebook.com"
 				className="facebook Social-link" >
 				<FontAwesomeIcon icon={faFacebookF} className="icon-shadow" size="1x" />
-			</a>
+			</a>*/}
 			<a href="https://www.instagram.com/syra.music/"
 				className="instagram Social-link" >
 				<FontAwesomeIcon icon={faInstagram} className="icon-shadow" size="1x" />
 			</a>
-			<a href="https://www.twitter.com"
+{/*			<a href="https://www.twitter.com"
 				className="twitter Social-link" >
 				<FontAwesomeIcon icon={faTwitter} className="icon-shadow" size="1x" />
-			</a>
+			</a>*/}
 			<a href="https://www.spotify.com"
 				className="spotify Social-link" >
 				<FontAwesomeIcon icon={faSpotify} className="icon-shadow" size="1x" />
