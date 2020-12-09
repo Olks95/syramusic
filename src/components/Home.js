@@ -1,46 +1,47 @@
 import React from 'react'
-import teardrop1 from '../images/Teardrop8.png'
-import teardrop2 from '../images/Teardrop3.png'
-import teardrop3 from '../images/Teardrop10.png'
-import teardrop4 from '../images/halloween.png'
-import teardrop5 from '../images/Teardrop5.1.png'
+import slideOneImg from '../images/green-leaves-1.jpg'
+import slideTwoImg from '../images/instagram-current.jpg'
+import slideThreeImg from '../images/Teardrop10.png'
+import slideFourImg from '../images/green-leaves-2.jpg'
+import slideFiveImg from '../images/green-leaves-lyric.jpg'
+
 import Carousel from './Carousel.js'
 
 
 const slides = [{
-	src: teardrop1,
-	title: 'Tears of Dispair',
-	subtitle: 'Choking the Feelings',
-	alt: 'Keeping it all inside',
-	href: "https://www.instagram.com/syra.music/",
+	src: slideOneImg,
+	title: 'Green Leaves',
+	subtitle: 'Debut Single, out 18th Dec 2020',
+	alt: 'Green Leaves Album Cover',
+	href: "https://www.spotify.com/",
 	id: 1001
 }, {
-	src: teardrop2,
-	title: 'Phantom of the Tears',
-	subtitle: 'Mask the Pain',
-	alt: 'Masks upon masks',
+	src: slideTwoImg,
+	title: 'Follow Me',
+	subtitle: '@syra.music on Instagram',
+	alt: 'Latest Instagram image',
 	href: "https://www.instagram.com/syra.music/",
 	id: 1002
 },{
-	src: teardrop3,
-	title: 'Follow @syra.music',
-	subtitle: 'on Instagram',
-	alt: "Link to Syra's Instagram",
-	href: "https://www.instagram.com/syra.music/",
+	src: slideThreeImg,
+	title: 'Subscribe to SYRA',
+	subtitle: 'on YouTube',
+	alt: "YouTube Profile Image",
+	href: "https://www.youtube.com/",
 	id: 1003
 },{
-	src: teardrop4,
-	title: 'Phantom of the Tears',
-	subtitle: 'Mask the Pain',
-	alt: 'Masks upon masks',
-	href: "https://www.instagram.com/syra.music/",
+	src: slideFourImg,
+	title: 'Green Leaves',
+	subtitle: 'Debut Single, out 18th Dec 2020',
+	alt: 'Green Leaves Picture',
+	href: "https://www.spotify.com/",
 	id: 1004
 }, {
-	src: teardrop5,
-	title: 'Tear Me Apart',
-	subtitle: '',
-	alt: 'Cry baby, cry',
-	href: "https://www.instagram.com/syra.music/",
+	src: slideFiveImg,
+	title: 'Subscribe to SYRA',
+	subtitle: 'on YouTube',
+	alt: 'Lyric Video Cover',
+	href: "https://www.youtube.com/",
 	id: 1005
 }]
 

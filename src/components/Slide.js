@@ -29,11 +29,12 @@ function Slide({ slide, offset}) {
       className={galleryStyle}
       href={slide.href}
       style={{
-        '--offset': offset,
+        '--offset': offset, 
         backgroundImage: `url(${slide.src})`
       }}>
-      <h1 className={"gallery-item-text " + textStyle}> {slide.title}</h1>
-      <h3 className={"gallery-item-text " + textStyle}> {slide.subtitle}</h3>
+      {/*<img src={slide.src} alt={slide.alt} />*/}
+      <h1 className={"gallery-item-title " + textStyle}> {slide.title}</h1>
+      <h3 className={"gallery-item-subtitle " + textStyle}> {slide.subtitle}</h3>
     </a>
   )
 }
