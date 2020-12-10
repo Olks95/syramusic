@@ -1,9 +1,9 @@
 import React from 'react'
 import slideGreenLeavesOne from '../images/green-leaves-1.jpg'
 import slideInstaOne from '../images/instagram-current.jpg'
-import slideYouTubeOne from '../images/Teardrop10.png'
-import slideGreenLeavesTwo from '../images/green-leaves-2.jpg'
-import slideYouTubeTwo from '../images/green-leaves-lyric.jpg'
+import slideYouTubeOne from '../images/carouselOption.png'
+import slideGreenLeavesTwo from '../images/green-leaves-1.jpg'
+import slideYouTubeTwo from '../images/Teardrop10.png'
 
 import Carousel from './Carousel.js'
 
