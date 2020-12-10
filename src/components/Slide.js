@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Slide({ slide, offset}) {
+function Slide({ image, title, subtitle, href, offset}) {
   // const active = offset === 0 ? true : null;
   let galleryStyle = "hidden";
   let textStyle = "";
@@ -27,14 +27,14 @@ function Slide({ slide, offset}) {
   return (
     <a 
       className={galleryStyle}
-      href={slide.href}
+      href={href}
       style={{
         '--offset': offset, 
-        backgroundImage: `url(${slide.src})`
+        backgroundImage: `url(${image})`
       }}>
       {/*<img src={slide.src} alt={slide.alt} />*/}
-      <h1 className={"gallery-item-title " + textStyle}> {slide.title}</h1>
-      <h3 className={"gallery-item-subtitle " + textStyle}> {slide.subtitle}</h3>
+      <h1 className={"gallery-item-title " + textStyle}> {title}</h1>
+      <h3 className={"gallery-item-subtitle " + textStyle}> {subtitle}</h3>
     </a>
   )
 }

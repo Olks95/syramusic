@@ -2,6 +2,7 @@ import React, { useReducer } from 'react';
 import '../carousel.scss';
 
 import Slide from './Slide.js';
+import useInstagram from '../hooks/useInstagram.js'
 
 
 function slideSetup( activeItems, slideOne, slideTwo, slideThree, slideFour, slideFive, ...additional ) {
@@ -134,6 +135,7 @@ function Carousel({ slides }) {
 		reducer, 
 		slideSetup(slides.length, ...slides)
 		);
+	// const [instaData, isLoaded] = useInstagram();
 
 	const galleryNavClassName = "gallery-nav-item ";
 	let gallerySlides = slides;
@@ -158,9 +160,18 @@ function Carousel({ slides }) {
 		  	<div className="gallery-container">
 
 		  	{
-		  		gallerySlides.map((slide, i) => (
-		  			<Slide slide={slide} key={slide.id} offset={state.slides.findIndex( (el) => el.id === slide.id) - 2 } />
-		  		))
+		  		gallerySlides.map((slide, i) => {
+		  			if (slide.alt === 'Instagram') {
+		  				return (
+		  					<div id="instafeed" key={slide.id} ></div>
+		  				)
+		  			} else {
+		  			 return	(
+		  				<Slide image={slide.src} title={slide.title} subtitle={slide.subtitle} href={slide.href} key={slide.id} offset={state.slides.findIndex( (el) => el.id === slide.id) - 2 } />
+		  				)
+		  			}
+
+		  		})
 		  	}
 
 			<ul className="gallery-nav" >

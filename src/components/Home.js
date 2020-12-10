@@ -19,7 +19,7 @@ const slides = [{
 	src: slideTwoImg,
 	title: 'Follow Me',
 	subtitle: '@syra.music on Instagram',
-	alt: 'Latest Instagram image',
+	alt: 'Instagram',
 	href: "https://www.instagram.com/syra.music/",
 	id: 1002
 },{
