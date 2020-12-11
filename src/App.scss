@@ -86,7 +86,8 @@ h3 {
 
 .App {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -212,6 +213,7 @@ h3 {
 
 .Releases-body, .Releases-footer {
   margin-top: 2vh;
+  margin-top: calc(var(--vh, 1vh) * 2);
 }
 
 .Releases-header {
@@ -277,6 +279,7 @@ h3 {
 .Shows-container {
   margin: 5rem 2rem;
   max-height: 60vh;
+  max-height: calc(var(--vh, 1vh) * 60);
   flex-grow: 1;
   width: 60%;
   position: relative;
@@ -382,6 +385,7 @@ h3 {
 
 .App-footer {
   flex-basis: 5vh;
+  flex-basis: calc(var(--vh, 1vh) * 5);
   width: 60%;
 }
 
@@ -418,7 +422,9 @@ a.Social-link:hover {
     width: 0;
     padding-bottom: 0;
     height: 40.5vh;
+    height: calc(var(--vh, 1vh) * 40.5);
     padding-right: 72vh;
+    padding-right: calc(var(--vh, 1vh) * 72);
   }
 }
 
