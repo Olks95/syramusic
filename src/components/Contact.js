@@ -5,10 +5,15 @@ function Contact() {
 		<div className="Shows-container container-shadow">
 			<h1>Contact</h1>
 			<hr/>
-			<div className="Shows-list">
-				<p>Nulla convallis lorem non augue laoreet volutpat.</p>
-				<p>Integer pretium, lacus non ultrices auctor, quam leo luctus tortor, at mollis nisi est sed elit.</p>
-				<p>Cras vel eleifend lectus, et sodales tellus.</p>
+			<div className="Shows-list Contact">
+				<div className="Shows-card">
+					<p>Instagram:</p>
+					<a href="https://www.instagram.com/syra.music/" >@syra.music</a>
+				</div>
+				<div className="Shows-card">
+					<p>Business enquiries only:</p>
+					<p>syra-music@outlook.com</p>
+				</div>
 			</div>
 		</div>
 	)

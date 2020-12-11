@@ -322,12 +322,23 @@ h3 {
 
   .Shows-list {
     margin: 0 2rem;
-    line-height: 2.5;
+    height: 50%;
+    line-height: 1.5;
     text-shadow: 0 0 0.3rem rgba(255, 255, 255, 0.7), 0 0 0.8rem rgba(255, 255, 255, 0.2);
+    &.Contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
     h3 {
+      font-size: 1.2rem;
       font-family: serif;
       text-transform: none;
       font-variant: normal;
+    }
+    .Shows-card {
+      font-size: 1.2rem;
+      margin: 2rem 0;
     }
   }
 }

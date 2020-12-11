@@ -25,7 +25,7 @@ function Releases() {
 					<h2 className="cta">
 						Watch more videos
 					</h2>
-					<a className="btn btn-lg btn-dark cta-youtube" href="https://www.youtube.com">
+					<a className="btn btn-lg btn-dark cta-youtube" href="https://www.youtube.com/channel/UCjXACzv_0uZw8Jqtya4CKqA">
 						<FontAwesomeIcon icon={faYoutube} className="cta-youtube-icon" size="2x"/>Visit YouTube
 					</a>
 				</div>

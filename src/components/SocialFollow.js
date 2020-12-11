@@ -7,9 +7,9 @@ import {
   faSpotify,
   faAmazon
 } from "@fortawesome/free-brands-svg-icons";
-import {
-	faEnvelope
-} from "@fortawesome/free-regular-svg-icons";
+// import {
+// 	faEnvelope
+// } from "@fortawesome/free-regular-svg-icons";
 
 function SocialFollow() {
 	return (
@@ -33,10 +33,6 @@ function SocialFollow() {
 			<a href="https://www.amazon.com/gp/product/B08Q4DP8WR"
 				className="amazon Social-link" >
 				<FontAwesomeIcon icon={faAmazon} className="icon-shadow" size="1x" />
-			</a>
-			<a href="mailto:musician92@hotmail.co.uk"
-				className="email Social-link" >
-				<FontAwesomeIcon icon={faEnvelope} className="icon-shadow" size="1x" />
 			</a>
 		</div>
 	)
