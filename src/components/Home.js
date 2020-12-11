@@ -25,7 +25,7 @@ const slides = [{
 },{
 	src: slideGreenLeavesOne,
 	title: 'Green Leaves',
-	subtitle: 'Pre-save now',
+	subtitle: 'Available here',
 	alt: "Green Leaves Album Cover",
 	href: "https://distrokid.com/hyperfollow/syra3/green-leaves",
 	id: 1003

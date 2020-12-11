@@ -18,7 +18,7 @@ function Releases() {
 					</iframe>
 					<div className="Releases-coming-soon Shows-container">
 						<h1>COMING SOON</h1>
-						<h2>18th December</h2>
+						<h2></h2>
 					</div>
 				</div>
 				<div className="Releases-footer">
