@@ -18,7 +18,7 @@ const slides = [{
 }, {
 	src: slideYouTubeOne,
 	title: 'Subscribe to SYRA',
-	subtitle: 'for more official videos',
+	subtitle: 'for more official videos on YouTube',
 	alt: 'YouTube Profile Image',
 	href: "https://www.youtube.com/channel/UCjXACzv_0uZw8Jqtya4CKqA",
 	id: 1002
@@ -31,16 +31,16 @@ const slides = [{
 	id: 1003
 },{
 	src: slideYouTubeTwo,
-	title: 'Subscribe to SYRA',
-	subtitle: 'on YouTube',
-	alt: 'YouTube Link',
-	href: "https://www.youtube.com/channel/UCjXACzv_0uZw8Jqtya4CKqA",
+	title: 'Listen to SYRA',
+	subtitle: 'on Spotify',
+	alt: 'Spotify Link',
+	href: "https://open.spotify.com/artist/0gnCReeV7AEe4i0960GB0e",
 	id: 1004
 }, {
 	src: slideGreenLeavesTwo,
 	title: 'Green Leaves',
 	subtitle: 'Debut Single, listen now',
-	alt: 'Spotify Pre-save Link',
+	alt: 'Distrokid Link',
 	href: "https://distrokid.com/hyperfollow/syra3/green-leaves",
 	id: 1005
 }]
