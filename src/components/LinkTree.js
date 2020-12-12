@@ -30,7 +30,7 @@ function LinkTree() {
 					{links.map((link) => {
 						return (
 							<li className="LinkTree-item container-shadow" key={ link.key } >
-								<h3>{ link.name }</h3>
+								<h2>{ link.name }</h2>
 								<a href={ link.src }>
 									<span className="LinkTree-link"></span>
 								</a> 

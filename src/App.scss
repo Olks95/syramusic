@@ -143,8 +143,8 @@ h3 {
   font-weight: normal;
   font-size: 8rem;
   line-height: 1;
-  color: #EAEAEA;
-  text-shadow: 0 0 1rem rgba(255, 255, 255, 1), 0 0 2rem rgba(255, 255, 255, 0.5) ;
+  color: #FFF;
+  text-shadow: 0 0 1rem rgba(255, 255, 255, 1), 0 0 2rem rgba(255, 255, 255, 0.9) ;
 }
 
 /*   ---===MAIN BODY===--- Variable Components*/
@@ -349,15 +349,17 @@ h3 {
 // LinkTree
 
 .LinkTree-container {
+  height: 55vh;
+  height: calc(var(--vh, 1vh) * 55);
   width: 100%;
   padding: 2rem 0;
   display: flex;
-  align-items: stretch;
+  align-items: flex-start;
   justify-content: center;
 }
 
 .LinkTree-list {
-  width: 40%;
+  width: 50%;
   display: flex;
   align-items: stretch;
   justify-content: flex-start;
@@ -369,6 +371,8 @@ h3 {
   margin: 1rem 0;
   position: relative;
   cursor: pointer;
+  color: #EAEAEA;
+  box-shadow: inset 0 0 2rem rgba(0, 0, 0, 1), 0 0 1.5rem rgba(255,255,255,0.35);
 }
 
 .LinkTree-link {
@@ -486,6 +490,10 @@ a.Social-link:hover {
     font-size: 2.2rem;
   }
 
+  h2 {
+    font-size: 2rem;
+  }
+
   h3 {
     font-size: 1.3rem;
   }
@@ -508,6 +516,7 @@ a.Social-link:hover {
 
   .App-logo {
     font-size: 12rem;
+    margin-top: 1rem;
   }
 
   .App-main {
@@ -528,6 +537,9 @@ a.Social-link:hover {
     p {
       font-size: 1.5rem;
     }
+  }
+  .LinkTree-list {
+    width: 65%;
   }
 }
 
@@ -550,6 +562,9 @@ a.Social-link:hover {
     height: 3rem;
     font-size: 3rem;
     line-height: 3rem;
+  }
+  .LinkTree-list {
+    width: 85%;
   }
 }
 
