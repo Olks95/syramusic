@@ -20,7 +20,7 @@ const slides = [{
 	title: 'Subscribe to SYRA',
 	subtitle: 'for more official videos on YouTube',
 	alt: 'YouTube Profile Image',
-	href: "https://www.youtube.com/channel/UCjXACzv_0uZw8Jqtya4CKqA",
+	href: "https://www.youtube.com/watch?v=XFDgPyesLqU&ab_channel=SYRA",
 	id: 1002
 },{
 	src: slideGreenLeavesOne,

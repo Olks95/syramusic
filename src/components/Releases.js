@@ -10,7 +10,7 @@ function Releases() {
 	return (
 			<div className="Releases-container">
 				<div className="Releases-header">
-					<h1>Green Leaves - Official Lyric Video</h1>
+					<h1>Green Leaves - Official Audio</h1>
 				</div>
 				<div className="Releases-body">
 					<iframe id="Releases-video" type="text/html" src={youtubeLink} frameBorder="0" allowFullScreen allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  title="Newest Syra Video">

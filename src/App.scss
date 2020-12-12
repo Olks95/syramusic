@@ -349,8 +349,8 @@ h3 {
 // LinkTree
 
 .LinkTree-container {
-  height: 55vh;
-  height: calc(var(--vh, 1vh) * 55);
+  height: 60vh;
+  height: calc(var(--vh, 1vh) * 60);
   width: 100%;
   padding: 2rem 0;
   display: flex;
@@ -373,6 +373,7 @@ h3 {
   cursor: pointer;
   color: #EAEAEA;
   box-shadow: inset 0 0 2rem rgba(0, 0, 0, 1), 0 0 1.5rem rgba(255,255,255,0.35);
+  font-family: "Times New Roman", serif;
 }
 
 .LinkTree-link {
