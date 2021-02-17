@@ -6,7 +6,7 @@ function Shows() {
 			<h1>Shows and Appearances</h1>
 			<hr/>
 			<div className="Shows-list">
-				<h3>No shows in 2020</h3>
+				<h3>No shows scheduled</h3>
 			</div>
 		</div>
 	)

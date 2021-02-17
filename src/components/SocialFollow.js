@@ -5,7 +5,8 @@ import {
   faApple,
   faInstagram,
   faSpotify,
-  faAmazon
+  faAmazon,
+  faFacebookF
 } from "@fortawesome/free-brands-svg-icons";
 // import {
 // 	faEnvelope
@@ -14,6 +15,10 @@ import {
 function SocialFollow() {
 	return (
 		<div className="Social-container">
+			<a href="https://www.facebook.com/SYRA-109231664539486/"
+				className="facebook Social-link" >
+				<FontAwesomeIcon icon={faFacebookF} className="icon-shadow" size="1x" />
+			</a>
 			<a href="https://www.youtube.com/channel/UCjXACzv_0uZw8Jqtya4CKqA"
 				className="youtube Social-link" >
 				<FontAwesomeIcon icon={faYoutube} className="icon-shadow" size="1x"/>

@@ -19,12 +19,17 @@ const links = [{
         name: "Apple Music",
         src: "https://music.apple.com/us/artist/syra/1544078309",
         key: 4
+    },
+    {
+        name: "Facebook",
+        src: "https://www.facebook.com/SYRA-109231664539486",
+        key: 5
     }
 ]
 
 function LinkTree() {
-    return ( <
-        >
+    return ( 
+        <>
         <div className="LinkTree-container ">
 				<ul className="LinkTree-list" >
 					{links.map((link) => {
