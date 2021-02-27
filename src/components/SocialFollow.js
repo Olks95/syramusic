@@ -6,7 +6,8 @@ import {
   faInstagram,
   faSpotify,
   faAmazon,
-  faFacebookF
+  faFacebookF,
+  faTiktok
 } from "@fortawesome/free-brands-svg-icons";
 // import {
 // 	faEnvelope
@@ -26,6 +27,10 @@ function SocialFollow() {
 			<a href="https://www.instagram.com/syra.music/"
 				className="instagram Social-link" >
 				<FontAwesomeIcon icon={faInstagram} className="icon-shadow" size="1x" />
+			</a>
+			<a href="https://www.tiktok.com/@syra.music?lang=en&fbclid=IwAR3iy4ZAxSd1JlVYGbwzb3Tx6hfOQyXAdKhaxrHUGjYDOWvJZBlc5JFgKJM"
+				className="tiktok Social-link" >
+				<FontAwesomeIcon icon={faTiktok} className="icon-shadow" size="1x" />
 			</a>
 			<a href="https://music.apple.com/us/album/green-leaves-single/1544087608?uo=4"
 				className="apple Social-link" >

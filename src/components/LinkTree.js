@@ -24,6 +24,11 @@ const links = [{
         name: "Facebook",
         src: "https://www.facebook.com/SYRA-109231664539486",
         key: 5
+    },
+    {
+        name: "TikTok",
+        src: "https://www.tiktok.com/@syra.music?lang=en&fbclid=IwAR3iy4ZAxSd1JlVYGbwzb3Tx6hfOQyXAdKhaxrHUGjYDOWvJZBlc5JFgKJM",
+        key: 6
     }
 ]
 
