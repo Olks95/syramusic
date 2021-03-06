@@ -1,8 +1,8 @@
 import React from 'react';
 
 const links = [{
-        name: "New Release - Green Leaves out now",
-        src: "https://distrokid.com/hyperfollow/syra3/green-leaves",
+        name: "I Wonder (Live Performance)",
+        src: "https://youtu.be/JjrAPa1cGYc",
         key: 1
 },
 {
@@ -16,9 +16,9 @@ const links = [{
         key: 3
     },
     {
-        name: "Apple Music",
-        src: "https://music.apple.com/us/artist/syra/1544078309",
-        key: 4
+        name: "TikTok",
+        src: "https://www.tiktok.com/@syra.music?lang=en&fbclid=IwAR3iy4ZAxSd1JlVYGbwzb3Tx6hfOQyXAdKhaxrHUGjYDOWvJZBlc5JFgKJM",
+        key: 6
     },
     {
         name: "Facebook",
@@ -26,9 +26,9 @@ const links = [{
         key: 5
     },
     {
-        name: "TikTok",
-        src: "https://www.tiktok.com/@syra.music?lang=en&fbclid=IwAR3iy4ZAxSd1JlVYGbwzb3Tx6hfOQyXAdKhaxrHUGjYDOWvJZBlc5JFgKJM",
-        key: 6
+        name: "Apple Music",
+        src: "https://music.apple.com/us/artist/syra/1544078309",
+        key: 4
     }
 ]
 

@@ -3,14 +3,14 @@ import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 
-const youtubeLink = "https://www.youtube.com/embed/XFDgPyesLqU?&rel=0";
+const youtubeLink = "https://www.youtube.com/embed/JjrAPa1cGYc";
 // const youtubeLink = "https://www.youtube.com/embed/tgbNymZ7vqY?&rel=0"
 
 function Releases() {
 	return (
 			<div className="Releases-container">
 				<div className="Releases-header">
-					<h1>Green Leaves - Official Audio</h1>
+					<h1>I Wonder (Live Performance)</h1>
 				</div>
 				<div className="Releases-body">
 					<iframe id="Releases-video" type="text/html" src={youtubeLink} frameBorder="0" allowFullScreen allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  title="Newest Syra Video">
