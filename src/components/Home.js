@@ -2,8 +2,8 @@ import React from 'react'
 import slideOne from '../images/carouselOption.png'
 import slideTwo from '../images/wgly.jpg'
 import slideThree from '../images/i-wonder.jpg'
-import slideFour from '../images/Teardrop10.png'
-import slideFive from '../images/instagram-current.jpg'
+import slideFour from '../images/instagram-current.jpg'
+import slideFive from '../images/Teardrop10.png'
 // import slideSix from '../images/green-leaves-1.jpg'
 
 
