@@ -2,7 +2,7 @@ import React from 'react'
 
 function Slide({ slide, offset}) {
   // const active = offset === 0 ? true : null;
-  let galleryStyle = "hidden";
+  let galleryStyle = "hidden-slide";
   let textStyle = "";
   switch(offset) {
     case -2:
@@ -22,7 +22,7 @@ function Slide({ slide, offset}) {
       galleryStyle = "gallery-item-last"
       break;
     default:
-      galleryStyle = "hidden"
+      galleryStyle = "hidden-slide"
   }
   return (
     <a 

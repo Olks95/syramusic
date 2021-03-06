@@ -1,5 +1,9 @@
-.hidden {
-  visibility: hidden; 
+.hidden-slide {
+  height: 10rem;
+  width: 10rem;
+  opacity: 0;
+  z-index: 0;
+  visibility: hidden;
 }
 
 .gallery {
@@ -170,6 +174,8 @@
   margin: 0 16px;
   width: 10px;
   cursor: pointer;
+  transform: 
+    translateX(calc(85% * var(--offset)));
 }
 
 .gallery-nav li.gallery-item-selected {

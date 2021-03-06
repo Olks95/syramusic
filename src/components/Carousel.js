@@ -3,82 +3,45 @@ import '../carousel.scss';
 
 import Slide from './Slide.js';
 
+function slideSetup( activeItems, slides ) {
+	// Creating arrays to hold the unique values for the different slides for later assembly
+	let slideClasses = [];
+	let slideIds = [];
+	let carousel = [];
 
-function slideSetup( activeItems, slideOne, slideTwo, slideThree, slideFour, slideFive, ...additional ) {
-	// console.log(additional)
-	// If there are 5 or more slides 5 slides should render
-	const slides = activeItems > 4 ?
-	[
-		{
-			className: "gallery-item-first",
-			id: slideOne.id,
-			active: true
-		},
-		{
-			className: "gallery-item-previous",
-			id: slideTwo.id,
-			active: true
-		},
-		{
-			className: "gallery-item-selected",
-			id: slideThree.id,
-			active: true
-		},
-		{
-			className: "gallery-item-next",
-			id: slideFour.id,
-			active: true
-		},
-		{
-			className: "gallery-item-last",
-			id: slideFive.id,
-			active: true
-		},
-
-		// If there are more than 5 images, the rest should be hidden
-		additional.length > 0 ? additional.map(( slide ) => ({
-			className: "hidden",
-			id: slide.id,
-			active: true
-		})) : {}
-	] : 	//if there are 4 slides or fewer only 3 should render in the center 3 locations
-	[
-		{
-			className: "hidden",
-			id: 999,
-			active: false
-		},
-		{
-			className: "gallery-item-previous",
-			id: slideOne.id,
-			active: true
-		},
-		{
-			className: "gallery-item-selected",
-			id: slideTwo.id,
-			active: true
-		},
-		{
-			className: "gallery-item-next",
-			id: slideThree.id,
-			active: true
-		},
-		//If there are 4 slides the 4th should be hidden
-		slideFour ? {
-			className: "hidden",
-			id: slideFour.id,
-			active: true
-		} : 
-		{
-			className: "hidden",
-			id: "",
-			active: false
-		}
+	// If there are enough slides to fill the full 5 width fill them, 
+	// if not the first and last should be hidden
+	slideClasses = [
+		activeItems > 4 ? "gallery-item-first" : "hidden",
+		"gallery-item-previous",
+		"gallery-item-selected",
+		"gallery-item-next",
+		activeItems > 4 ? "gallery-item-last" : "hidden"
 	]
+	// As long as there are more active items than classes add a hidden slide at the end.
+	// This will only occur with 6 or more slides and they should therefore all be hidden.
+	while(activeItems > slideClasses.length) {
+		slideClasses.push("hidden");
+	}
+
+	//Making the array of IDs and adding empty string for the first since it will be empty (4th slide would be added to the end)
+	slideIds = slides.map(slide => slide.id)
+	if(activeItems < 5) {
+		slideIds = ["", ...slideIds];
+	}
+
+	//
+	while(slideIds.length > 0) {
+		const slideId = slideIds.shift();
+		carousel.push({
+			className: slideClasses.shift(),
+			id: slideId,
+			active: slideId ? true : false
+		})
+	}
 
 	const state = {
-		//filter slides with className to remove any empty objects in the array while keeping slides that are hidden
-		slides: slides.filter((slide) => slide.className),
+		slides: carousel,
 		activeItems: activeItems
 	}
 	return state;
@@ -92,10 +55,7 @@ const reducer = (state, action) => {
 		}
 	})
 	let firstSlide, prevSlide, nextSlide, lastSlide;
-
-	// if(action.type === 'FIND') {
-
-	// }
+	
 	switch (action.type) {
 		case 'FIND':
 			//Locate desired slide in the carousel (state)
@@ -110,21 +70,25 @@ const reducer = (state, action) => {
 				lastSlide = activeSlides.pop()
 				activeSlides = [lastSlide, ...activeSlides]
 			}
-			return slideSetup(state.activeItems, ...activeSlides)
+			return slideSetup(state.activeItems, activeSlides)
 		case 'FIRST':
 			lastSlide = activeSlides.pop()
 			nextSlide = activeSlides.pop()
-			return slideSetup(state.activeItems, nextSlide, lastSlide, ...activeSlides)
+			activeSlides = [nextSlide, lastSlide, ...activeSlides];
+			return slideSetup(state.activeItems, activeSlides)
 		case 'PREV': 
 			lastSlide = activeSlides.pop()
-			return slideSetup(state.activeItems, lastSlide, ...activeSlides)
+			activeSlides = [lastSlide, ...activeSlides];
+			return slideSetup(state.activeItems, activeSlides)
 		case 'NEXT':
 			firstSlide = activeSlides.shift()
-			return slideSetup(state.activeItems, ...activeSlides, firstSlide)
+			activeSlides = [ ...activeSlides, firstSlide];
+			return slideSetup(state.activeItems, activeSlides)
 		case 'LAST':
 			firstSlide = activeSlides.shift()
 			prevSlide = activeSlides.shift()
-			return slideSetup(state.activeItems, ...activeSlides, firstSlide, prevSlide)
+			activeSlides = [...activeSlides, firstSlide, prevSlide];
+			return slideSetup(state.activeItems, activeSlides)
 		default: throw new Error();
 	}
 }
@@ -132,7 +96,7 @@ const reducer = (state, action) => {
 function Carousel({ slides }) {
 	const [state, dispatch] = useReducer(
 		reducer, 
-		slideSetup(slides.length, ...slides)
+		slideSetup(slides.length, slides)
 		);
 
 	const galleryNavClassName = "gallery-nav-item ";
