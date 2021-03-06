@@ -4,7 +4,7 @@ import slideTwo from '../images/wgly.jpg'
 import slideThree from '../images/i-wonder.jpg'
 import slideFour from '../images/Teardrop10.png'
 import slideFive from '../images/instagram-current.jpg'
-import slideSix from '../images/green-leaves-1.jpg'
+// import slideSix from '../images/green-leaves-1.jpg'
 
 
 import Carousel from './Carousel.js'
@@ -45,13 +45,6 @@ const slides = [{
 	alt: 'Spotify Link',
 	href: "https://open.spotify.com/artist/0gnCReeV7AEe4i0960GB0e",
 	id: 1005
-},{
-	src: slideSix,
-	title: 'Testing Slide 6',
-	subtitle: 'For improvements',
-	alt: 'Please Work',
-	href: "https://www.tiktok.com/@syra.music?lang=en&fbclid=IwAR3iy4ZAxSd1JlVYGbwzb3Tx6hfOQyXAdKhaxrHUGjYDOWvJZBlc5JFgKJM",
-	id: 1006
 }]
 
 

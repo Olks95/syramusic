@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import React, { useReducer, useState } from 'react';
 import '../carousel.scss';
 
 import Slide from './Slide.js';
@@ -99,6 +99,9 @@ function Carousel({ slides }) {
 		slideSetup(slides.length, slides)
 		);
 
+	const [xStartPosition, setXStartPosition] = useState(0);
+	const [xCurrentPosition, setXCurrentPosition] = useState(0);
+
 	const galleryNavClassName = "gallery-nav-item ";
 	let gallerySlides = slides;
 
@@ -117,9 +120,35 @@ function Carousel({ slides }) {
 		gallerySlides = [slideFirst, ...slides];
 	}
 
+	const handleTouchStart = e => {
+		const startPos = e.changedTouches[0].pageX;
+		setXStartPosition(startPos);
+	}
+
+	const handleTouchMove = e => {
+		const currentPos = e.changedTouches[0].pageX;
+		setXCurrentPosition(currentPos);
+	}
+
+	const handleTouchEnd = e => {
+		const endPos = e.changedTouches[0].pageX;
+		const diff = xStartPosition - endPos;
+		if(Math.abs(diff) > 50) {
+			if(diff > 0) {
+				dispatch({ type: 'NEXT' })
+			} else {
+				dispatch({ type: 'PREV' })
+			}
+		}
+	}
+
 	return (
 		<div className="gallery">
-		  	<div className="gallery-container">
+		  	<div className="gallery-container"
+			  	onTouchStart={handleTouchStart}
+	  	        onTouchMove={handleTouchMove}
+	  	        onTouchEnd={handleTouchEnd}
+		  	>
 
 		  	{
 		  		gallerySlides.map((slide, i) => (
