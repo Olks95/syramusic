@@ -1,7 +1,7 @@
 import React from 'react'
 import slideOne from '../images/carouselOption.png'
-import slideTwo from '../images/wgly.jpg'
-import slideThree from '../images/i-wonder.jpg'
+import slideTwo from '../images/i-wonder.jpg'
+import slideThree from '../images/wgly-release.jpg'
 import slideFour from '../images/instagram-current.jpg'
 import slideFive from '../images/Teardrop10.png'
 // import slideSix from '../images/green-leaves-1.jpg'
@@ -19,19 +19,19 @@ const slides = [{
 	id: 1001
 },{
 	src: slideTwo,
-	title: "Who's Gonna Love You",
-	subtitle: 'Coming Soon',
-	alt: "Who's Gonna Love You teaser",
-	href: "https://www.instagram.com/p/CKhZ_lzjcqE/",
-	id: 1002
-}, {
-	src: slideThree,
 	title: 'I Wonder (Live)',
 	subtitle: 'Click to watch on YouTube',
 	alt: "I Wonder Live Performance",
 	href: "https://youtu.be/JjrAPa1cGYc",
+	id: 1002
+},{
+	src: slideThree,
+	title: "Who's Gonna Love You",
+	subtitle: 'Click to stream now',
+	alt: "Who's Gonna Love You",
+	href: "https://distrokid.com/hyperfollow/syra3/whos-gonna-love-you",
 	id: 1003
-}, {
+},{
 	src: slideFour,
 	title: 'Follow SYRA',
 	subtitle: '@syra.music on Instagram',
