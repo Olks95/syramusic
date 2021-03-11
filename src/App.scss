@@ -212,7 +212,7 @@ h3 {
   flex-direction: row;
   flex-wrap: wrap;
   text-align: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .Releases-card {
@@ -349,8 +349,8 @@ h3 {
 // LinkTree
 
 .LinkTree-container {
-  height: 60vh;
-  height: calc(var(--vh, 1vh) * 60);
+  // height: 60vh;
+  // height: calc(var(--vh, 1vh) * 60);
   width: 100%;
   padding: 2rem 0;
   display: flex;
@@ -435,6 +435,11 @@ a.Social-link:hover {
     padding-right: 48vh;
     padding-right: calc(var(--vh, 1vh) * 48);
   }
+  
+  .Releases-card {
+    margin-top: 5vh;
+  }
+
 }
 
 @media (min-width: 2000px) {

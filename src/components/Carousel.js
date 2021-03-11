@@ -100,7 +100,6 @@ function Carousel({ slides }) {
 		);
 
 	const [xStartPosition, setXStartPosition] = useState(0);
-	const [xCurrentPosition, setXCurrentPosition] = useState(0);
 
 	const galleryNavClassName = "gallery-nav-item ";
 	let gallerySlides = slides;
@@ -125,11 +124,6 @@ function Carousel({ slides }) {
 		setXStartPosition(startPos);
 	}
 
-	const handleTouchMove = e => {
-		const currentPos = e.changedTouches[0].pageX;
-		setXCurrentPosition(currentPos);
-	}
-
 	const handleTouchEnd = e => {
 		const endPos = e.changedTouches[0].pageX;
 		const diff = xStartPosition - endPos;
@@ -146,7 +140,6 @@ function Carousel({ slides }) {
 		<div className="gallery">
 		  	<div className="gallery-container"
 			  	onTouchStart={handleTouchStart}
-	  	        onTouchMove={handleTouchMove}
 	  	        onTouchEnd={handleTouchEnd}
 		  	>
 

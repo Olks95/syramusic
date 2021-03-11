@@ -1,11 +1,16 @@
 import React from 'react';
 
 const links = [{
+        name: "WHO'S GONNA LOVE YOU",
+        src: "https://open.spotify.com/track/5MBMzqqJHeos2X4c5dZHpe?si=9707848db0854395",
+        key: 10
+    },
+    {
         name: "I Wonder (Live Performance)",
-        src: "https://youtu.be/JjrAPa1cGYc",
+        src: "https://open.spotify.com/track/1il1FAydHJa4UuADx1Pzbb?si=23a9e330601b4f20",
         key: 1
-},
-{
+    },
+    {
         name: "YouTube",
         src: "https://www.youtube.com/channel/UCjXACzv_0uZw8Jqtya4CKqA",
         key: 2
@@ -18,7 +23,7 @@ const links = [{
     {
         name: "TikTok",
         src: "https://www.tiktok.com/@syra.music?lang=en&fbclid=IwAR3iy4ZAxSd1JlVYGbwzb3Tx6hfOQyXAdKhaxrHUGjYDOWvJZBlc5JFgKJM",
-        key: 6
+        key: 4
     },
     {
         name: "Facebook",
@@ -28,7 +33,7 @@ const links = [{
     {
         name: "Apple Music",
         src: "https://music.apple.com/us/artist/syra/1544078309",
-        key: 4
+        key: 6
     }
 ]
 
