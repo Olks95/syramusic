@@ -26,7 +26,7 @@ const slides = [{
 	id: 1002
 },{
 	src: slideThree,
-	title: "If I had Ended It",
+	title: "'If I had Ended It'",
 	subtitle: 'Pre-save Now',
 	alt: "If I had Ended It",
 	href: "https://distrokid.com/hyperfollow/syra3/if-i-had-ended-it",
