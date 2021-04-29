@@ -1,7 +1,7 @@
 import React from 'react'
 import slideOne from '../images/carouselOption.png'
 import slideTwo from '../images/i-wonder.jpg'
-import slideThree from '../images/wgly-release.jpg'
+import slideThree from '../images/iihei.jpg'
 import slideFour from '../images/instagram-current.jpg'
 import slideFive from '../images/Teardrop10.png'
 // import slideSix from '../images/green-leaves-1.jpg'
@@ -26,10 +26,10 @@ const slides = [{
 	id: 1002
 },{
 	src: slideThree,
-	title: "Who's Gonna Love You",
-	subtitle: 'Click to stream now',
-	alt: "Who's Gonna Love You",
-	href: "https://distrokid.com/hyperfollow/syra3/whos-gonna-love-you",
+	title: "If I had Ended It",
+	subtitle: 'Pre-save Now',
+	alt: "If I had Ended It",
+	href: "https://distrokid.com/hyperfollow/syra3/if-i-had-ended-it",
 	id: 1003
 },{
 	src: slideFour,
