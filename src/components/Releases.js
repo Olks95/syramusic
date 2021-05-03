@@ -3,7 +3,7 @@ import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 
-const youtubeLinkOne = "https://www.youtube.com/embed/JjrAPa1cGYc";
+const youtubeLinkOne = "https://www.youtube.com/embed/qVimZYsi6iU";
 const youtubeLinkTwo = "https://www.youtube.com/embed/X5mShN4AfjU";
 // const youtubeLinkOne = "https://www.youtube.com/embed/tgbNymZ7vqY?&rel=0"
 
@@ -12,7 +12,7 @@ function Releases() {
 			<div className="Releases-container">
 				<div className="Releases-card">
 					<div className="Releases-header">
-						<h1>I Wonder (Live Performance)</h1>
+						<h1>If I Had Ended It (Official Lyric Video)</h1>
 					</div>
 					<div className="Releases-body">
 						<iframe id="Releases-video" type="text/html" src={youtubeLinkOne} frameBorder="0" allowFullScreen allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  title="I Wonder Live Video">

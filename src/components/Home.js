@@ -27,9 +27,9 @@ const slides = [{
 },{
 	src: slideThree,
 	title: "'If I had Ended It'",
-	subtitle: 'Pre-save Now',
+	subtitle: 'Listen Now',
 	alt: "If I had Ended It",
-	href: "https://distrokid.com/hyperfollow/syra3/if-i-had-ended-it",
+	href: "https://open.spotify.com/track/4Xma81Jmo59XfSiw5Qv4mr?si=dbbe20bbe6e9465e",
 	id: 1003
 },{
 	src: slideFour,
