@@ -11,8 +11,8 @@ const links = [{
         key: 2
     },
     {
-        name: "I Wonder (Live Performance)",
-        src: "https://open.spotify.com/track/1il1FAydHJa4UuADx1Pzbb?si=23a9e330601b4f20",
+        name: "Gaslight (4 songs)",
+        src: "https://open.spotify.com/artist/0gnCReeV7AEe4i0960GB0e/discography/single",
         key: 3
     },
     {

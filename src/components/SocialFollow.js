@@ -36,11 +36,11 @@ function SocialFollow() {
 				className="apple Social-link" >
 				<FontAwesomeIcon icon={faApple} className="icon-shadow" size="1x" />
 			</a>
-			<a href="https://open.spotify.com/album/5V3EF1MjaaBlQKw3UEuNhr"
+			<a href="https://open.spotify.com/artist/0gnCReeV7AEe4i0960GB0e"
 				className="spotify Social-link" >
 				<FontAwesomeIcon icon={faSpotify} className="icon-shadow" size="1x" />
 			</a>
-			<a href="https://www.amazon.com/gp/product/B08Q4DP8WR"
+			<a href="https://www.amazon.com/gp/product/B093SPTFCZ"
 				className="amazon Social-link" >
 				<FontAwesomeIcon icon={faAmazon} className="icon-shadow" size="1x" />
 			</a>

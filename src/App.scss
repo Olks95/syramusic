@@ -308,6 +308,9 @@ h3 {
     text-align: center;
     align-self: center;
     margin: 2rem 0;
+  }
+  
+  .hr-main {
     &::after {
       font-family: "Arenq", sans-serif;
       line-height: 0.8;
@@ -320,7 +323,7 @@ h3 {
       padding: 0 0.75rem;
       background: #191919;
       text-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.7), 0 0 1rem rgba(255, 255, 255, 0.4);
-    }
+    }   
   }
 
   .Shows-list {
