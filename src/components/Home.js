@@ -2,7 +2,7 @@ import React from 'react'
 import slideOne from '../images/carouselOption.png'
 import slideTwo from '../images/iihei.jpg'
 import slideThree from '../images/gaslightSplatteryTexture.png'
-import slideFour from '../images/instagram-current1.jpg'
+import slideFour from '../images/instagram-current.jpg'
 import slideFive from '../images/Teardrop10.png'
 // import slideSix from '../images/green-leaves-1.jpg'
 

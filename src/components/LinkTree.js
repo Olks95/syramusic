@@ -11,8 +11,8 @@ const links = [{
         key: 2
     },
     {
-        name: "Gaslight (4 songs)",
-        src: "https://open.spotify.com/artist/0gnCReeV7AEe4i0960GB0e/discography/single",
+        name: "Gaslight EP - Coming Soon",
+        src: "https://www.instagram.com/p/CTiGA7cDhxI/",
         key: 3
     },
     {
