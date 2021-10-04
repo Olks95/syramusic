@@ -12,7 +12,7 @@ const links = [{
     },
     {
         name: "Gaslight EP - Coming Soon",
-        src: "https://www.instagram.com/p/CTiGA7cDhxI/",
+        src: "https://www.instagram.com/p/CUYLpOXDG_1/",
         key: 3
     },
     {
