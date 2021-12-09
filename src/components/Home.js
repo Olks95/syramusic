@@ -34,9 +34,9 @@ const slides = [{
 },{
 	src: slideThree,
 	title: "",
-	subtitle: 'New EP, Coming Soon',
+	subtitle: 'New EP, Pre-save Now',
 	alt: "Gaslight",
-	href: "https://open.spotify.com/artist/0gnCReeV7AEe4i0960GB0e/discography/single",
+	href: "https://distrokid.com/hyperfollow/syra3/gaslight-ep",
 	id: 1003
 },{
 	src: slideFour,

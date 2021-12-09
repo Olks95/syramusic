@@ -1,18 +1,18 @@
 import React from 'react';
 
 const links = [{    
+        name: "Gaslight EP - Pre-save Now",
+        src: "https://distrokid.com/hyperfollow/syra3/gaslight-ep",
+        key: 1
+    },
+    {
         name: "If I Had Ended It - Official Lyric Video",
         src: "https://youtu.be/qVimZYsi6iU",
-        key: 1
+        key: 2
     },
     {
         name: "Who's Gonna Love You",
         src: "https://open.spotify.com/track/5MBMzqqJHeos2X4c5dZHpe?si=9707848db0854395",
-        key: 2
-    },
-    {
-        name: "Gaslight EP - Coming Soon",
-        src: "https://www.instagram.com/p/CUYLpOXDG_1/",
         key: 3
     },
     {
