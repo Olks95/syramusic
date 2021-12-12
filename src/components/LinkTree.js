@@ -1,33 +1,33 @@
 import React from 'react';
 
 const links = [{    
-        name: "Gaslight EP - Pre-save Now",
+        name: "Gaslight EP - Listen on Spotify Now!",
         src: "https://distrokid.com/hyperfollow/syra3/gaslight-ep",
         key: 1
     },
     {
-        name: "If I Had Ended It - Official Lyric Video",
-        src: "https://youtu.be/qVimZYsi6iU",
+        name: "Gaslight EP - Listen on YouTube Now!",
+        src: "https://youtube.com/playlist?list=PL4QGGgwA13ay7N3DZ9RYaK7j5kPBg2dTF",
         key: 2
     },
     {
-        name: "Who's Gonna Love You",
-        src: "https://open.spotify.com/track/5MBMzqqJHeos2X4c5dZHpe?si=9707848db0854395",
+        name: "If I Had Ended It - Official Lyric Video",
+        src: "https://youtu.be/qVimZYsi6iU",
         key: 3
-    },
-    {
-        name: "YouTube",
-        src: "https://www.youtube.com/channel/UCjXACzv_0uZw8Jqtya4CKqA",
-        key: 4
     },
     {
         name: "Spotify",
         src: "https://open.spotify.com/artist/0gnCReeV7AEe4i0960GB0e",
-        key: 5
+        key: 4
     },
     {
         name: "TikTok",
         src: "https://www.tiktok.com/@syra.music?lang=en&fbclid=IwAR3iy4ZAxSd1JlVYGbwzb3Tx6hfOQyXAdKhaxrHUGjYDOWvJZBlc5JFgKJM",
+        key: 5
+    },
+    {
+        name: "YouTube",
+        src: "https://www.youtube.com/channel/UCjXACzv_0uZw8Jqtya4CKqA",
         key: 6
     },
     {

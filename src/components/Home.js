@@ -2,7 +2,7 @@ import React from 'react'
 import slideOne from '../images/carouselOption.png'
 import slideTwo from '../images/iihei.jpg'
 import slideThree from '../images/gaslightSplatteryTexture.png'
-import slideFour from '../images/instagram-current1.jpg'
+import slideFour from '../images/instagram-current.jpg'
 import slideFive from '../images/Teardrop10.png'
 // import slideSix from '../images/green-leaves-1.jpg'
 
@@ -15,7 +15,7 @@ const slides = [{
 	title: 'Subscribe to SYRA',
 	subtitle: 'for more official videos on YouTube',
 	alt: 'YouTube Profile Image',
-	href: "https://www.youtube.com/watch?v=XFDgPyesLqU&ab_channel=SYRA",
+	href: "https://youtube.com/playlist?list=PL4QGGgwA13ay7N3DZ9RYaK7j5kPBg2dTF",
 	id: 1001
 },{
 // 	src: slideTwo,
@@ -23,7 +23,7 @@ const slides = [{
 // 	subtitle: 'Click to watch on YouTube',
 // 	alt: "I Wonder Live Performance",
 // 	href: "https://youtu.be/JjrAPa1cGYc",
-// 	id: 1002
+// 	id: 1006
 // },{
 	src: slideTwo,
 	title: "If I had Ended It",
@@ -34,9 +34,9 @@ const slides = [{
 },{
 	src: slideThree,
 	title: "",
-	subtitle: 'New EP, Pre-save Now',
+	subtitle: 'EP Out Now! Click HERE',
 	alt: "Gaslight",
-	href: "https://distrokid.com/hyperfollow/syra3/gaslight-ep",
+	href: "https://open.spotify.com/album/0VXKrC0CB6caXZGCvoDCSJ?si=IWDd4wZYTWeke2j7Fuaa2A",
 	id: 1003
 },{
 	src: slideFour,

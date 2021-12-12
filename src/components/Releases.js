@@ -3,16 +3,19 @@ import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 
-const youtubeLinkOne = "https://www.youtube.com/embed/qVimZYsi6iU";
-const youtubeLinkTwo = "https://www.youtube.com/embed/X5mShN4AfjU";
-// const youtubeLinkOne = "https://www.youtube.com/embed/tgbNymZ7vqY?&rel=0"
+//Click share on the youtube video, click embeded and copy only the src link into one of the two variables below. (Link one on the left/first depending on resolution)
+const youtubeLinkOne = "https://www.youtube.com/embed/bWgSA3SKhwE";
+const youtubeLinkTwo = "https://www.youtube.com/embed/JjrAPa1cGYc";
+
+const videoTitleOne = "Gaslight";
+const videoTitleTwo = "I Wonder";
 
 function Releases() {
 	return (
 			<div className="Releases-container">
 				<div className="Releases-card">
 					<div className="Releases-header">
-						<h1>If I Had Ended It (Official Lyric Video)</h1>
+						<h1>{videoTitleOne}</h1>
 					</div>
 					<div className="Releases-body">
 						<iframe id="Releases-video" type="text/html" src={youtubeLinkOne} frameBorder="0" allowFullScreen allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  title="I Wonder Live Video">
@@ -22,7 +25,7 @@ function Releases() {
 				</div>
 				<div className="Releases-card">
 					<div className="Releases-header">
-						<h1>Who's Gonna Love You</h1>
+						<h1>{videoTitleTwo}</h1>
 					</div>
 					<div className="Releases-body">
 						<iframe id="Releases-video" type="text/html" src={youtubeLinkTwo} frameBorder="0" allowFullScreen allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  title="Who's Gonna Love You">
