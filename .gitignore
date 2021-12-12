@@ -37,6 +37,4 @@ amplifyconfiguration.json
 amplify-build-config.json
 amplify-gradle-config.json
 amplifytools.xcconfig
-.vs/slnx.sqlite
-.vs/VSWorkspaceState.json
-.vs/syramusic/v16/.suo
+.vs/
