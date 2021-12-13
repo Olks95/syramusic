@@ -8,7 +8,7 @@ function Contact() {
 			<div className="Shows-list Contact">
 				<div className="Shows-card">
 					<p>Instagram:</p>
-					<a href="https://www.instagram.com/syra.music/" >@syra.music</a>
+					<a href="https://www.instagram.com/syra.music" >@syra.music</a>
 				</div>
 				<div className="Shows-card">
 					<p>Business enquiries only:</p>

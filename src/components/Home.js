@@ -43,7 +43,7 @@ const slides = [{
 	title: 'Follow SYRA',
 	subtitle: '@syra.music on Instagram',
 	alt: 'Instagram',
-	href: "https://www.instagram.com/syra.music/",
+	href: "https://www.instagram.com/syra.music",
 	id: 1004
 },{
 	src: slideFive,
