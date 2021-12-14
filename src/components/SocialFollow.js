@@ -32,7 +32,7 @@ function SocialFollow() {
 				className="tiktok Social-link" >
 				<FontAwesomeIcon icon={faTiktok} className="icon-shadow" size="1x" />
 			</a>
-			<a href="https://music.apple.com/us/album/green-leaves-single/1544087608?uo=4"
+			<a href="https://music.apple.com/us/artist/syra/1544078309"
 				className="apple Social-link" >
 				<FontAwesomeIcon icon={faApple} className="icon-shadow" size="1x" />
 			</a>
